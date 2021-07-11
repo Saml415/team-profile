@@ -3,15 +3,20 @@ const fs = require("fs");
 inquirer
   .prompt([
     {
+      type: "input",
+      message: "What is your name?",
+      name: "name",
+    },
+    {
       type: "list",
-      message: "How do we reach you?",
-      name: "contacts",
-      choices: ["Phone", "Email", "In Person", "Text"],
+      message: "What is you title?",
+      name: "titles",
+      choices: ["Manager", "Engineer", "Intern"],
     },
   ])
   .then((answers) => {
     console.log(answers);
-    fs.appendFile("answers.text", JSON.stringify(answers) + '\n', (error) => {
+    fs.appendFile("index.html", JSON.stringify(answers) + '\n', (error) => {
       if (error) {
         console.log(error);
       }
