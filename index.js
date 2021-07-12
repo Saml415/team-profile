@@ -16,9 +16,13 @@ inquirer
   ])
   .then((answers) => {
     console.log(answers);
-    fs.appendFile("index.html", JSON.stringify(answers) + '\n', (error) => {
+    fs.writeFile("index.html", JSON.stringify(answers) + '\n', (error) => {
       if (error) {
         console.log(error);
       }
     });
   });
+
+  function mainMenu(){
+
+  }
