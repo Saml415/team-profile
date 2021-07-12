@@ -17,4 +17,12 @@ describe("Employee", () => {
       });
     });
   });
+
+  describe("getName", () => {
+    const employee = new Employee("Israel", 5, "israel@email.com");
+
+    const result = employee.getName();
+
+    expect(result).toBe("Israel");
+  });
 });
