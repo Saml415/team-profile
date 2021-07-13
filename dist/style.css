@@ -1,0 +1,32 @@
+*{
+    font-family: 'Roboto Slab', serif;
+}
+
+.jumbotron{
+    padding: 16px;
+    text-align: center;
+    
+    background-color: hsl(348, 86%, 43%);
+    color: white;
+}
+
+.row-1,.row-2{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card{
+    border: 1px black solid;
+    padding: 16px;
+    margin-right: 64px;
+    margin-bottom: 64px;
+    margin-top: 16px;
+    background-color: dodgerblue;
+    
+}
+
+.cardhead{
+   color: white;
+}
