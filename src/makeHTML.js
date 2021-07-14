@@ -38,8 +38,8 @@ const cardManager = function (manager) {
       <h3>Manager</h3>
     </div>
     <p>ID: ${manager.id}</p>
-    <p>Email: ${manager.email}</p>
-    <p>Office number: ${manager.number}</p>
+    <p>Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
+    <p>Office Number: ${manager.number}</p>
   </div>   
     `;
 };
@@ -52,7 +52,7 @@ const cardEngineer = function (engineer) {
         <h3>Engineer</h3>
       </div>
       <p>ID: ${engineer.id}</p>
-      <p>Email: ${engineer.email}</p>
+      <p>Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
       <p>GitHub: ${engineer.account}</p>
     </div>   
       `;
@@ -66,8 +66,8 @@ const cardIntern = function (intern) {
         <h3>Intern</h3>
       </div>
       <p>ID: ${intern.id}</p>
-      <p>Email: ${intern.email}</p>
-      <p>Office number: ${intern.number}</p>
+      <p>Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
+      <p>School: ${intern.school}</p>
     </div>   
       `;
 };
@@ -86,7 +86,7 @@ const makeHTML = function (teamArray) {
 
       html = html.concat(engineer);
     }
-    if (job === "Manager") {
+    if (job === "Intern") {
       const intern = cardIntern(teamArray[i]);
 
       html = html.concat(intern);
