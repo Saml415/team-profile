@@ -10,11 +10,11 @@
     color: white;
 }
 
-.row-1,.row-2{
+.row-1{
     
     display: flex;
     justify-content: center;
-    
+    flex-wrap: wrap;
 }
 
 .card{

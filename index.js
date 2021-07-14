@@ -35,7 +35,7 @@ const managerPrompt = () => {
       const manager = new Manager(name, id, email, officeNumber);
 
       teamArray.push(manager);
-      console.log(manager);
+     
     });
 };
 
@@ -103,6 +103,7 @@ const employeePrompt= () => {
 };
 
 const writeFile = (data) => {
+  console.log(data)
   fs.writeFile("./dist/index.html", data, (err) => {
     if (err) {
       console.log(err);
@@ -119,8 +120,10 @@ managerPrompt()
     return makeHTML(teamArray);
   })
   .then(fileHTML => {
+    console.log(fileHTML)
     return writeFile(fileHTML);
   })
   .catch(err => {
     console.log(err);
   });
+
