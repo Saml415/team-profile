@@ -15,6 +15,7 @@ const buildHTMLPage = function (html) {
         href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
         rel="stylesheet"
       />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     </head>
     <body>
       <div class="jumbotron">
@@ -35,7 +36,7 @@ const cardManager = function (manager) {
 <div class="card">
     <div class ="cardhead">
       <h2>${manager.name}</h2>
-      <h3>Manager</h3>
+      <h3>Manager <i class="bi bi-person-badge-fill"></i></h3>
     </div>
     <p>ID: ${manager.id}</p>
     <p>Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
@@ -49,7 +50,7 @@ const cardEngineer = function (engineer) {
   <div class="card">
       <div class ="cardhead">
         <h2>${engineer.name}</h2>
-        <h3>Engineer</h3>
+        <h3>Engineer <i class="bi bi-laptop"></i></h3>
       </div>
       <p>ID: ${engineer.id}</p>
       <p>Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
@@ -63,7 +64,7 @@ const cardIntern = function (intern) {
   <div class="card">
       <div class ="cardhead">
         <h2>${intern.name}</h2>
-        <h3>Intern</h3>
+        <h3>Intern <i class="bi bi-journal-code"></i></h3>
       </div>
       <p>ID: ${intern.id}</p>
       <p>Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
