@@ -53,7 +53,7 @@ const cardEngineer = function (engineer) {
       </div>
       <p>ID: ${engineer.id}</p>
       <p>Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-      <p>GitHub: ${engineer.account}</p>
+      <p>GitHub: <a href="https://github.com/${engineer.account}">${engineer.account}</a></p>
     </div>   
       `;
 };
