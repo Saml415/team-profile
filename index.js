@@ -78,7 +78,7 @@ const employeePrompt= () => {
       {
         type: "confirm",
         name: "recruit",
-        message: "Would you like to add a more employees?",
+        message: "Would you like to add another employees?",
         default: false
       },
     ])
